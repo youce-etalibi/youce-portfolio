@@ -57,6 +57,42 @@
     color: #fff6ed;
 }
 
+.parentFlashagNone {
+    display: none;
+}
+
+.parentFlashag {
+    background-color: #ff5e0073;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    z-index: 3;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+.parentFlashag h5 {
+    background-color: #00003e;
+    width: fit-content;
+    color: #fff6ed;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.parentFlashag h5 button{
+    background: none;
+    border: 0.05rem solid #ff5e00;
+    padding: 0 0.1rem;
+    border-radius: 50%;
+    outline: none;
+    color: #ff5e00;
+    cursor: pointer;
+    position: relative;
+    left: 9.3rem;
+    bottom: 0.7rem;
+}
+
 
 /* Dark Mode  */
 

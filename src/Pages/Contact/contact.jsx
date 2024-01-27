@@ -6,13 +6,19 @@ export default function Contact({isDark}) {
 
   const form = useRef();
 
+  const [toggleMessage, setToggleMessae] = useState(false);
+
+  function HandleToggleMessage(){
+    setToggleMessae(false);
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
     
     emailjs.sendForm('service_rkuvvxt', 'template_zg181yr', form.current, 'F53bha7sLwQaBE10-')
       .then((result) => {
           console.log(result.text);
-          console.log('Message sent')
+          setToggleMessae(true);
       }, (error) => {
           console.log(error.text);
       });
@@ -53,6 +59,11 @@ export default function Contact({isDark}) {
             ></textarea>
             <input type="submit" value="SEND" className="btnSubmit" /> <br />
           </form>
+          <div className={toggleMessage ? "parentFlashag" : "parentFlashagNone"}>
+            <h5>
+              <button onClick={HandleToggleMessage}><i class='bx bx-x' ></i></button> Message sent well
+            </h5>
+          </div>
         </div>
       </div>
     </>

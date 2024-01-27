@@ -13,7 +13,7 @@ import ScrollToTopButton from "../Pages/ScrollTopButton/scrolTopBtn";
 export default function RouterApp() {
 
   return (
-      <Router basename='portfolio'>
+      <Router basename='youce-portfolio'>
         <ProgressScrollBar />
         <ScrollToTopButton />
         <Routes>
