@@ -1,0 +1,112 @@
+:root {
+    --byat: #fff6ed;
+    --orange9wi : #ff5e00;
+    --orangeD3if : orange;
+    --blueMari : #00003e ;
+}
+
+/* Light Dark */
+
+.bodySectionContact {
+    display: flex;
+}
+.FormContact {
+    background: linear-gradient(120deg, #ff5e00, #ff5e00, orange);
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.FormContact label{
+    color: #fff6ed;
+    font-weight: 700;
+}
+.FormContact input{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #00003e;
+    border: 0.1rem solid #00003e;
+    border-radius: 5px;
+    color: #fff6ed;
+    font-weight: 600;
+}
+.btnSubmit{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #00003e;
+    border: 0.1rem solid #00003e;
+    border-radius: 5px;
+    color: #fff6ed;
+    font-weight: 700;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.btnSubmit:hover {
+    background-color: #00002d49;
+}
+.btnSubmit:active{
+    background-color: #ff5e00;
+    color: #00003e;
+}
+.FormContact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #00003e;
+    border: 0.1rem solid #00003e;
+    border-radius: 5px;
+    color: #fff6ed;
+}
+
+
+/* Dark Mode  */
+
+
+.bodySectionContactDark {
+    display: flex;
+}
+.FormContactDark {
+    background: linear-gradient(120deg, #ff5e00, #ff5e00, orange);
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.FormContactDark label{
+    color: #fff6ed;
+    font-weight: 700;
+}
+.FormContactDark input{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #00003e;
+    border: 0.1rem solid #00003e;
+    border-radius: 5px;
+    color: #fff6ed;
+    font-weight: 600;
+}
+.btnSubmit{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #00003e;
+    border: 0.1rem solid #00003e;
+    border-radius: 5px;
+    color: #fff6ed;
+    font-weight: 700;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.btnSubmit:hover {
+    background-color: #00002d49;
+}
+.btnSubmit:active{
+    background-color: #ff5e00;
+    color: #00003e;
+}
+.FormContactDark textarea{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #00003e;
+    border: 0.1rem solid #00003e;
+    border-radius: 5px;
+    color: #fff6ed;
+}

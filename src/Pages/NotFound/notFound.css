@@ -1,0 +1,33 @@
+.parent404 {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.parentText404 {
+    margin-top: -4rem;
+}
+.parentText404 h1{
+    font-size: 7rem;
+    color: var(--blueMari);
+}
+.parentText404 h3{
+    font-size: 1rem;
+    color: var(--orange9wi);
+    background: var(--blueMari);
+    border-radius: 5px;
+    text-align: center;
+}
+.parentText404 h6{
+    color: var(--orange9wi);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.LinkBack{
+    color: var(--orange9wi) ;
+    background: linear-gradient(90deg, rgb(0, 0, 83), rgb(34, 34, 146));
+    padding: 0.2rem 0.3rem;
+    border-radius: 50%;
+}

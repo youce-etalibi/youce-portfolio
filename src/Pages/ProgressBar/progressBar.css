@@ -1,0 +1,20 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #00003e, #00003e, #070791);
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: linear-gradient(90deg, #ff5e00, #ff5e00, #ffb700);
+    width: 0%;
+    border-radius: 5px;
+  }

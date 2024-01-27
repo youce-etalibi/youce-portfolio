@@ -1,0 +1,356 @@
+:root {
+    --byat: #fff6ed;
+    --orange9wi : #ff5e00;
+    --orangeD3if : orange;
+    --blueMari : #00003e ;
+}
+/* Light Mode */
+
+.checkMenuBtn {
+    display: none;
+}
+.parentNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 0rem 1rem;
+}
+
+.parentBrand h3{
+    color: var(--blueMari);    
+    font-size: 1.8rem;
+}
+
+.parentBrand h3 span{
+    color: var(--orange9wi);    
+    font-size: 2rem;
+}
+
+.parentRight {
+    display: flex;
+}
+
+.parentLinks {
+    display: flex;
+}
+
+.parentLinks ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.parentLinks ul li {
+    color: var(--blueMari);
+    font-size: 1.1rem;
+    transition: all .2s;
+}
+.parentLinks ul li:hover {
+    box-sizing: border-box;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+.cool-link:hover::after {
+    width: 100%;
+    transition: width .2s;
+} 
+
+.parentMode {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.parentMode button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.parentMode h3 {
+    color: var(--orange9wi);
+    background-color: var(--blueMari);
+    width: fit-content ;
+    padding:0.4rem ;
+    border-radius: 7px;
+    transition: all .2s;
+}
+.parentMode h3:hover {
+    color: var(--blueMari);
+    background-color: var(--orange9wi);
+}
+.parentMenu {
+    display: none;
+    justify-content: center;
+}
+.parentMenu button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.parentMenu h3 {
+    color: var(--orange9wi);
+    background-color: var(--blueMari);
+    width: fit-content ;
+    padding:0.4rem ;
+    border-radius: 7px;
+    transition: all .2s;
+}
+.parentMenu h3:hover {
+    color: var(--blueMari);
+    background-color: var(--orange9wi);
+}
+
+@media (max-width : 695px){
+    .parentNavbar {
+        width: 100%;
+    }
+}
+@media (max-width : 487px){
+    .parentMenu {
+        display: flex;
+    }
+    .parentNavbar {
+        width: 100%;
+    }
+    .parentLinks ul {
+        display: none;
+    }
+    .parentLinksMenu {
+        position: fixed;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        background:linear-gradient(125deg, var(--blueMari),  var(--blueMari), rgb(0, 54, 170));
+        margin:auto;
+        width: 100vw;
+        height: 100vh;
+        left: -0%;
+        top: 3.9rem;
+        transition: all .2s;
+    }
+
+    .parentLinksMenu ul {
+        color: var(--orange9wi);
+        list-style-type: none;
+        display: flex;
+        margin-top: -3rem;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        gap: 1.4rem;
+    }
+    .parentLinksMenu ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        margin-top: 4px;
+        background: var(--orange9wi);
+        transition: width .3s;
+    }
+    .parentLinksMenu ul li:hover::after {
+        width: 100%;
+        transition: width .2s;
+    } 
+    .parentLinksMenu ul li:active {
+        background: linear-gradient(110deg, var(--orange9wi), var(--orange9wi), orange);
+        color: var(--blueMari);
+        padding-inline: 1rem;
+        border-radius: 5px;
+    }
+    .parentNavbar {
+        position: fixed;
+        z-index: 4;
+        background-color: #fff6ed;
+    }
+}
+
+
+/* DarkMode */
+
+
+.checkMenuBtn {
+    display: none;
+}
+.parentNavbarDark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 0rem 1rem;
+    /* background-color: var(--blueMari); */
+}
+
+.parentBrandDark h3{
+    color: var(--byat);    
+    font-size: 1.8rem;
+}
+
+.parentBrandDark h3 span{
+    color: var(--orange9wi);    
+    font-size: 2rem;
+}
+
+.parentRightDark {
+    display: flex;
+}
+
+.parentLinksDark {
+    display: flex;
+}
+
+.parentLinksDark ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.parentLinksDark ul li {
+    color: var(--byat);
+    font-size: 1.1rem;
+    transition: all .2s;
+    cursor: pointer;
+}
+.parentLinksDark ul li:hover {
+    box-sizing: border-box;
+}
+
+.cool-linkDark::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--byat);
+    transition: width .3s;
+}
+.cool-linkDark:hover::after {
+    width: 100%;
+    transition: width .2s;
+} 
+
+.parentModeDark {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.parentModeDark button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.parentModeDark h3 {
+    color: var(--blueMari);
+    background-color: var(--orange9wi);
+    width: fit-content ;
+    padding:0.4rem ;
+    border-radius: 7px;
+    transition: all .2s;
+}
+.parentModeDark h3:hover {
+    color: var(--orange9wi);
+    background-color: var(--blueMari);
+}
+.parentMenuDark {
+    display: none;
+    justify-content: center;
+}
+.parentMenuDark button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.parentMenuDark h3 {
+    color: var(--blueMari);
+    background-color: var(--orange9wi);
+    width: fit-content ;
+    padding:0.4rem ;
+    border-radius: 7px;
+    transition: all .2s;
+}
+.parentMenuDark h3:hover {
+    color: var(--orange9wi);
+    background-color: var(--blueMari);
+}
+
+@media (max-width : 695px){
+    .parentNavbarDark {
+        width: 100%;
+    }
+}
+@media (max-width : 487px){
+    .parentMenuDark {
+        display: flex;
+    }
+    .parentNavbarDark {
+        width: 100%;
+    }
+    .parentLinksDark ul {
+        display: none;
+    }
+    .parentLinksMenuDark {
+        position: fixed;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        background:linear-gradient(125deg, var(--orange9wi),  var(--orange9wi), var(--orangeD3if));
+        margin:auto;
+        width: 100vw;
+        height: 100vh;
+        left: -0%;
+        top: 3.9rem;
+        transition: all .2s;
+    }
+
+    .parentLinksMenuDark ul {
+        color: var(--blueMari);
+        list-style-type: none;
+        display: flex;
+        margin-top: -3rem;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        gap: 1.4rem;
+    }
+    .parentLinksMenuDark ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        margin-top: 4px;
+        background: var(--blueMari);
+        transition: width .3s;
+    }
+    .parentLinksMenu ul li:hover::after {
+        width: 100%;
+        transition: width .2s;
+    } 
+    .parentLinksMenu ul li:active {
+        background: linear-gradient(110deg, var(--blueMari), var(--blueMari), #0d0d81);
+        color: var(--blueMari);
+        padding-inline: 1rem;
+        border-radius: 5px;
+    }
+    .parentNavbarDark {
+        position: fixed;
+        z-index: 4;
+        background-color: var(--blueMari);
+    }
+}
+

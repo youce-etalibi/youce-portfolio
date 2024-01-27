@@ -1,0 +1,191 @@
+:root {
+    --byat: #fff6ed;
+    --orange9wi : #ff5e00;
+    --orangeD3if : orange;
+    --blueMari : #00003e ;
+}
+
+
+/* Light Mode */
+
+
+.parentAbout {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.typeSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    opacity: 0.5;
+}
+.typeSection h6 {
+    rotate: -90deg;
+}
+.IntroSection {
+    width: 100%;
+}
+.IntroSection p{
+    color: var(--blueMari);
+    opacity: 0.6;
+}
+.bodySection {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.childSection {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: start;
+    gap: 1rem;
+    margin-left: 4rem;
+}
+.bodySection button {
+    background:transparent;
+    width: fit-content;
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
+    color: var(--blueMari);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    border: 0.1rem solid #00003e;
+    font-weight: 700;
+    display: flex;
+    gap: 0.3rem;
+    transition: all .1s;
+}
+.bodySection button i{
+    font-size: 1rem;
+}
+.bodySection button:hover{
+    background: linear-gradient(120deg, #ff5e00, #ff5e00, orange);
+    border: 0.1rem solid #ff5e00;
+    color: var(--byat);
+    transform: scale(1.1);
+}
+.bodySection button:active{
+    background: linear-gradient(120deg, #00003e, #00003e,  #75759a);
+    border: 0.1rem solid #00003e;
+    color: var(--orange9wi);
+    transform: scale(0.6);
+}
+.name { 
+    font-family: "Caveat", cursive;
+    font-size: 1.4rem;
+}
+
+@media (max-width : 747px) {
+    .parentAbout {
+        display: flex;
+        flex-direction: column;
+    }
+    .typeSection {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+/* Dark  Mode*/
+
+.parentAboutDark {
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.typeSectionDark {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    opacity: 0.5;
+}
+.typeSectionDark h6 {
+    color: var(--byat);
+    rotate: -90deg;
+}
+.IntroSectionDark {
+    width: 100%;
+}
+.IntroSectionDark p{
+    color: var(--orangeD3if);
+}
+.IntroSectionDark h2{
+    color: var(--byat);
+}
+.bodySectionDark {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.childSectionDark {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: start;
+    gap: 1rem;
+    margin-left: 4rem;
+}
+.childSectionDark p {
+    color: var(--byat);
+}
+.bodySectionDark button {
+    background:transparent;
+    width: fit-content;
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
+    color: var(--orange9wi);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    border: 0.1rem solid var(--orange9wi);
+    font-weight: 700;
+    display: flex;
+    gap: 0.3rem;
+    transition: all .1s;
+}
+.bodySectionDark button i{
+    font-size: 1rem;
+}
+.bodySectionDark button:hover{
+    background: linear-gradient(120deg, #ff5e00, #ff5e00, orange);
+    border: 0.1rem solid #ff5e00;
+    color: var(--byat);
+    transform: scale(1.1);
+}
+.bodySection button:active{
+    background: linear-gradient(120deg, #00003e, #00003e,  #75759a);
+    border: 0.1rem solid #00003e;
+    color: var(--orange9wi);
+    transform: scale(0.6);
+}
+.name { 
+    font-family: "Caveat", cursive;
+    font-size: 1.4rem;
+}
+
+@media (max-width : 747px) {
+    .parentAboutDark {
+        display: flex;
+        flex-direction: column;
+    }
+    .typeSectionDark {
+        display: none;
+        visibility: hidden;
+    }
+}
