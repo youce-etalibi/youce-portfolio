@@ -3,7 +3,7 @@ import "./about.css";
 
 export default function About({isDark}) {
   const handleDownload = () => {
-    const pdfFilePath = "/Youssef-Talibi-CV-E.pdf";
+    const pdfFilePath = "./Youssef-Talibi-CV-E.pdf";
     const link = document.createElement("a");
     link.href = pdfFilePath;
     link.download = "Youssef-Talibi-CV-E.pdf";
