@@ -64,7 +64,7 @@ export default function Works({isDark}) {
             <div className={isDark ? 'works-containerDark' : 'works-container'}>
               {worksArray.map((work) => (
                 <div key={work.id} className={isDark ? 'work-itemDark' : 'work-item'}>
-                  <img src={`/Works/${work.image}`} alt={work.name} title={work.name}/>
+                  <img src={require(`../assets/Works/${work.image}`)} alt={work.name} title={work.name}/>
                   <div className="ribbon">{work.statu}</div>
                 {work.code ?   
                     <div className={isDark ? 'parentButtonsDark' : 'parentButtons'}>
